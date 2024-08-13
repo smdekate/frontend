@@ -6,7 +6,7 @@ function App() {
   const [jokes, setJokes] = useState([])
 
   useEffect(() => {
-    axios.get('/api/jokes')
+    axios.get('https://backend-sbt7.onrender.com/api/jokes')
     .then((response) => setJokes(response.data))
     .catch((error) => {console.log(error);
     })
